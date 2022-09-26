@@ -36,7 +36,9 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
   - added a conditional in the handleGamePlay method to produce different outcomes
 
 - As a user, I can click on a “Play Again” button that will restart the game.
- - branch:
+ - branch: game-reset
+ - create an onClick button 
+ - create the logic for restarting the game by a handleReset
 
 
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.

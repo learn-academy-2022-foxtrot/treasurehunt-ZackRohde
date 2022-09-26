@@ -16,7 +16,6 @@ const App = () => {
   ])
 
   const [treasureLocation, setTreasureLocation] = useState(Math.floor(Math.random() * board.length))
-
   const [bombLocation, setBombLocation] = useState(Math.floor(Math.random() * board.length))
 
   const handleGamePlay = (clickedSquare) => {
@@ -33,6 +32,23 @@ const App = () => {
       setBoard(updateBoard)
     }
   }
+
+  const handleReset = () => {
+    setBoard([
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"
+    ])
+    setTreasureLocation(Math.floor(Math.random() * board.length))
+    setBombLocation(Math.floor(Math.random() * board.length))
+  }
+
   console.log("treasureLocation:", treasureLocation)
   console.log("bombLocation:", bombLocation)
 
@@ -48,6 +64,7 @@ const App = () => {
             handleGamePlay={handleGamePlay} />
         })}
       </div>
+      <button onClick={handleReset}>Restart Game</button>
     </>
   )
 }
