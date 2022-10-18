@@ -67,7 +67,10 @@ const App = () => {
             handleGamePlay={handleGamePlay} />
         })}
       </div>
-      <button onClick={handleReset}>Restart Game</button>
+      <br></br>
+      <div class="resetgame">
+        <button onClick={handleReset}>Restart Game</button>
+      </div>
     </>
   )
 }

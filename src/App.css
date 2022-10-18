@@ -16,3 +16,11 @@ h1 {
   width: 610px;
   margin: 0 auto;
 }
+
+body {
+  background-color: lightgreen;
+}
+
+.resetgame {
+  text-align: center;
+}
